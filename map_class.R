@@ -7,10 +7,10 @@ library(raster)
 Dir1 <- "E:/Google Drive/GIS/drone/campus/2022/out/flight_06_29_2022"
 
 
-field_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/valid_pts/06_29_2022/green_field_06_29_2022.shp")
-dead_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/valid_pts/06_29_2022/dead_06_29_2022.shp")
-tree_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/valid_pts/06_29_2022/realtreetubes.shp")
-milkweed_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/valid_pts/06_29_2022/milkweed_06_29_2022.shp")
+field_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/classification/updated_06_29/greenfield.shp")
+dead_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/classification/updated_06_29/06_29_2022/dead.shp")
+tree_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/classification/updated_06_29/treetubes.shp")
+milkweed_pts29 <- st_read("E:/Google Drive/GIS/drone/campus/2022/out/classification/updated_06_29/milkweed.shp")
 
 f06_29_2022 <- stack(paste0(Dir1, "/flight_t3_06_29_2019_transparent_reflectance_blue.tif"),
                      paste0(Dir1, "/flight_t3_06_29_2019_transparent_reflectance_green.tif"),
